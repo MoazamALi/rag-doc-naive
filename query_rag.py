@@ -18,7 +18,7 @@ chromadb_client = ChromaDBClient(
     embedding_function=openai_ef
 )
 
-question = "tell me about databricks"
+question = "tell me why tv Writers won't let AI replace them?"
 relevant_chunks = chromadb_client.query_documents(question)
 answer = client.generate_response(question, relevant_chunks)
 
